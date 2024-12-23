@@ -30,13 +30,9 @@ if (process.env.NODE_ENV !== "production") {
 	);
 }
 
-function buildLogger(service) {
+export const buildLogger = (service: string) => {
 	return {
-		log: (message) => logger.log("info", { message, service }),
-		error: (message) => logger.log("info", { message, service }),
+		log: (message: string) => logger.log("info", { message, service }),
+		error: (message: string) => logger.log("error", { message, service }),
 	};
-}
-
-module.exports = {
-	buildLogger,
 };
