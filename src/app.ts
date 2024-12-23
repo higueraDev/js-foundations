@@ -3,6 +3,9 @@ import { buildMakePerson, Person } from "./js-foundation/05-factory-functions";
 import { getPokemonById } from "./js-foundation/06-promises";
 import { buildLogger, getAge, getRandomId } from "./plugins";
 
+//! Destructuring Reference
+require("./js-foundation/02-destructuring");
+
 //! Factory Callbacks Reference
 getUserById(1, (error, user) => {
 	if (error) {
@@ -38,5 +41,6 @@ getPokemonById(1)
 
 const logger = buildLogger("foo");
 
+//! Logger Reference
 logger.log("Hello world!"); // info: Hello world! {"service":"foo","timestamp":"2024-12-23T21:30:24.136Z"}
 logger.error("Wrong"); // error: Wrong {"service":"foo","timestamp":"2024-12-23T21:30:36.706Z"}
