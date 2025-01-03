@@ -12,7 +12,7 @@ console.table({ SHELL, HOMEBREW_PREFIX });
 └─────────────────┴─────────────────┘
  */
 
-const characters = ["Flash", "Superman", "Green Lantern", "Batman"];
+export const characters = ["Flash", "Superman", "Green Lantern", "Batman"];
 
 const [_, __, , batman] = characters;
 
